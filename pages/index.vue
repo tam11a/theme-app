@@ -1,11 +1,14 @@
 <script setup lang="ts">
-const route = useRoute()
+import { Button } from "@/components/ui/button";
 </script>
 
 <template>
-  <div>
-    <h1>Nuxt Routing set up successfully!</h1>
-    <p>Current route: {{ route.path }}</p>
-    <a href="https://nuxt.com/docs/getting-started/routing" target="_blank">Learn more about Nuxt Routing</a>
+  <div class="flex flex-row items-center gap-3 flex-wrap m-4">
+    <Button>Button</Button>
+    <Button variant="outline">Button</Button>
+    <Button variant="ghost">Button</Button>
+    <Button variant="link">Button</Button>
+    <Button variant="destructive">Button</Button>
+    <Button variant="secondary">Button</Button>
   </div>
 </template>
