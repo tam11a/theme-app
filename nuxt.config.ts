@@ -6,7 +6,10 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "shadcn-nuxt"],
+  colorMode: {
+    classSuffix: "",
+  },
   shadcn: {
     /**
      * Prefix for all the imported component
